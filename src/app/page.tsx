@@ -32,17 +32,22 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000)
+    const fetchData = async () => {
+      try {
+        await new Promise(resolve => setTimeout(resolve, 2000)); 
+        setLoading(false);
+      } catch (error) {
+        console.error('Failed to fetch data', error);
+      }
+    };
 
-    return () => clearTimeout(timer)
-
-  }, [])
+    fetchData();
+  }, []);
 
   if (loading) {
-    return <Spinner />
+    return <Spinner />;
   }
+
 
 
   return (
