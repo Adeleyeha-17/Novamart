@@ -1,9 +1,12 @@
-import Image from "next/image";
+"use client"
+
 import { lusitana } from "@/components/ui/fonts";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Spinner from "@/components/spinner"
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
+import { useEffect, useState } from "react";
 
 
 const perks = [
@@ -25,6 +28,23 @@ const perks = [
 ]
 
 export default function Home() {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000)
+
+    return () => clearTimeout(timer)
+
+  }, [])
+
+  if (loading) {
+    return <Spinner />
+  }
+
+
   return (
     <>
     <MaxWidthWrapper>
