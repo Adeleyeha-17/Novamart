@@ -2,9 +2,9 @@ import Image from "next/image"
 
 const Spinner = () => {
    return(
-      <div className="w-full h-screen flex items-center justify-center">
+      <div className="fixed inset-0 h-screen flex items-center justify-center z-50 bg-white">
          <Image 
-            src="/apple-touch-icon.png"
+            src="/logo.png"
             width={80}
             height={80}
             alt="spinner"
