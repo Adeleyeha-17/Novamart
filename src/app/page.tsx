@@ -2,11 +2,11 @@
 
 import { lusitana } from "@/components/ui/fonts";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Spinner from "@/components/spinner"
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
 import { useEffect, useState } from "react";
+import Spinner from "@/components/Spinner";
 
 
 const perks = [
