@@ -46,9 +46,9 @@ export default function Home() {
 
 
   return (
-    <>
+    <div className={`${lusitana.className}`}>
     <MaxWidthWrapper>
-    <div className={`${lusitana.className} py-20 mx-auto text-center flex flex-col items-center max-w-3xl`}>
+    <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
       <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl ">Marketplace for high-quality{` `}<span className="text-blue-400">digital assets.</span></h1>
 
       <p className="mt-6 text-lg max-w-prose text-muted-foreground">Discover Innovation and Convenience at Novamart</p>
@@ -88,6 +88,6 @@ export default function Home() {
       </MaxWidthWrapper>
 
     </section>
-    </>
+    </div>
   );
 }
