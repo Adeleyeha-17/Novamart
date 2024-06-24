@@ -1,40 +1,40 @@
 export const PRODUCT_CATEGORIES = [
    {
-      label: "UI Kits",
-      value: "ui_kits" as const,
+      label: "Kits",
+      value: "kits" as const,
       featured: [
          {
             name: "Editor picks",
             href: "#",
-            imageSrc: "/nav/ui-kits/mixed.jpg"
+            imageSrc: "/nav/kits/all-nike.jpg"
          },{
             name: "New Arrivals",
             href: "#",
-            imageSrc: "/nav/ui-kits/purple.jpg"
+            imageSrc: "/nav/kits/customer2.jpg"
          },
          {
             name: "Best Seller",
             href: "#",
-            imageSrc: "/nav/ui-kits/blue.jpg"
+            imageSrc: "/nav/kits/black-nike.jpg"
          }
       ]
    },{
-      label: "Icons",
-      value: "icons" as const,
+      label: "Kicks",
+      value: "kicks" as const,
       featured: [
          {
-            name: "Favorite Icon Picks",
+            name: "Favorite Footware Picks",
             href: "#",
-            imageSrc: "/nav/icons/new.jpg"
+            imageSrc: "/nav/footware/big-shoe1.png"
          },{
             name: "New Arrivals",
             href: "#",
-            imageSrc: "/nav/icons/picks.jpg"
+            imageSrc: "/nav/footware/big-shoe2.png"
          },
          {
-            name: "Bestselling Icons",
+            name: "Bestselling Footware",
             href: "#",
-            imageSrc: "/nav/icons/bestsellers.jpg"
+            imageSrc: "/nav/footware/big-shoe3.png"
          }
       ]
    }
